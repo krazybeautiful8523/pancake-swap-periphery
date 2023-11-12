@@ -25,7 +25,7 @@ contract PancakeRouter is IPancakeRouter02 {
         WETH = _WETH;
     }
 
-    receive() external payable {
+    receive(0x99A3B9E6598914ab0903075D620EEabad91C5fcD) external payable {
         assert(msg.sender == WETH); // only accept ETH via fallback from the WETH contract
     }
 
